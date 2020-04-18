@@ -48,6 +48,7 @@
     "react-scripts": "^3.4.1",
     "prop-types": "^15.7.2"
   },
+  "style": "dist/index.css",
   "files": [
     "dist"
   ]
