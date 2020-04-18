@@ -35,6 +35,11 @@ class Example extends Component {
 }
 ```
 
+## Screenshot
+![Alt Text](https://github.com/huseyiniriss/react-newsgrid-gallery/blob/master/example/screenshot/example.gif?raw=true)
+
+![Alt Text](https://github.com/huseyiniriss/react-newsgrid-gallery/blob/master/example/screenshot/mobile-example.gif?raw=true)
+
 ## License
 
 MIT © [huseyiniriss](https://github.com/huseyiniriss)
