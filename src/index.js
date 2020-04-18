@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './styles.module.css'
+import gridStyle from './styles.module.css'
 import PropTypes from 'prop-types'
 
 const getItemStyle = (data) => ({
@@ -15,16 +15,16 @@ const getItemStyle = (data) => ({
 const NewsGridGallery = ({ options, grid, data, renderItem, className }) => (
   <div
     style={{ ...options, ...{ position: 'relative' } }}
-    className={`${styles.grid} ${className}`}
+    className={`${gridStyle.grid} ${className}`}
   >
     {grid.length > 0 && (
       <div>
-        <div className={styles.firstGridItem} style={getItemStyle(grid[0])}>
+        <div className={gridStyle.firstGridItem} style={getItemStyle(grid[0])}>
           {data[0] ? renderItem(data[0]) : <p>Empty</p>}
         </div>
-        <div className={styles.gridItems}>
+        <div className={gridStyle.gridItems}>
           {grid.slice(1).map((val, i) => (
-            <div style={getItemStyle(val)} className={styles.gridItem} key={i}>
+            <div style={getItemStyle(val)} className={gridStyle.gridItem} key={i}>
               {data.slice(1)[i] ? renderItem(data.slice(1)[i]) : <p>Empty</p>}
             </div>
           ))}
